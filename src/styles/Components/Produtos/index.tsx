@@ -22,7 +22,7 @@ const Produtos = ({ isAdm }: Props) => {
         <ProdutosDiv>
             { searchProducts().map(product => (
                 <Produto
-                    key={product.id} id={product.id} name={product.name} price={product.price}
+                    key={product.id} id={product.id} name={product.name} price={product.price} image={product.image}
                     isAdm={isAdm}
                 />
             )) }

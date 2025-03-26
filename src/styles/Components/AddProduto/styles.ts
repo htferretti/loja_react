@@ -47,16 +47,32 @@ export const InputDiv = styled.div`
     }
 
     label {
+        place-items:center;
         color: ${props => props.theme.mainColor};
         font-size: 15px;
-        display:inline-block;
+        display: inline-block;
         margin-top: 8px;
     }
 `
 
-export const InputImg = styled.input`
-    height: 100%;
+export const LabelImg = styled.label`
+    display: flex !important;
+    height: 95%;
     cursor: pointer;
+    background: ${props => props.theme.secondColor};
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        filter: brightness(90%);
+    }
+`
+
+export const InputImg = styled.input`
+    display: none;
 `
 
 export const InputName = styled.input`

@@ -22,7 +22,9 @@ export const ProdutoDiv = styled.div`
         flex-direction: column;
     }
 
-    input {
+    input, label {
+        font-size: 14px;
+        text-align: left;
         margin: 8px 0;
         padding: 8px;
         height: 32px;
@@ -35,6 +37,10 @@ export const ProdutoDiv = styled.div`
         &::placeholder {
             color: ${props => props.theme.mainColor};
         }
+    }
+
+    input[type="file"] {
+        display: none;
     }
 `
 

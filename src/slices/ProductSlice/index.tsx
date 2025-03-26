@@ -4,6 +4,7 @@ interface Product {
     id: number
     name: string
     price: number
+    image: string | null
 }
 
 interface ProductsState {
@@ -13,7 +14,8 @@ interface ProductsState {
 const example = {
     id: 0,
     name: 'Exemplo de produto',
-    price: 9.9
+    price: 9.9,
+    image: null
 }
 
 const initialState: ProductsState = {
